@@ -1,0 +1,157 @@
+@import "../variable/variables";
+@import "../mixins/mixin";
+// navbar part-----------
+#navbar{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    .headerUl{
+        background: url(../images/navcov.png)no-repeat center/cover;
+        padding: 10px 0;
+        li{
+            margin: 5px 20px;
+            a{
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 32px;
+                text-transform: capitalize;
+                color:$white;
+                &:hover{
+                    color:$red;
+                }
+            }
+        }
+    }
+    .h2{
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        h1{
+            font-size: 45px;
+            font-weight: 800;
+            color:$white;
+        }
+    }
+    .navbar{
+        .sm_sm_navbar{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 320px;
+            margin-left: -320px;
+            height: 100vh;
+            display: block;
+            background: $dark;
+            transition: ease-in-out .5s;
+            .sm_mdNav{
+                padding:20px 50px;
+                li{
+                    a{
+                        display: inline-block;
+                        text-transform: capitalize;
+                        font-size: 17px;
+                        font-weight: 400;
+                        color:$white;
+                        margin: 10px 0;
+                        &:hover{
+                            color:$red2;
+                            border-bottom: 2px solid $white;
+                        }
+                    }
+                }
+            }
+            .close{
+                width: 100%;
+                background: rgb(215, 215, 215);
+                display: grid;
+                place-items: center;
+                border: 1px solid $border;
+                i{
+                    margin: 10% 48%;
+                    font-size: 30px;
+                    color:$white;
+                }
+            }
+        }
+        .smnv{
+            margin-left: 0;
+        }
+        .container{
+            padding: 0 55px !important;
+            a{
+                width: 10%;
+                .home{
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    background: $white;
+                    margin: 5px 0;
+                }
+            }
+            .menav{
+                display: flex;
+                justify-content: right;
+                width: 90%;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    li{
+                        margin: 5px 21px;
+                        font-size: 17px;
+                        font-weight: 400;
+                        color:$white;
+                        text-transform: capitalize;
+                        display: flex;
+                        align-items: center;
+                        i{
+                            font-size: 14px;
+                            margin-right: 7px;
+                        }
+                    }
+                    select{
+                        margin: 5px 21px;
+                        display: block;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        background: $dark;
+                        color:$white;
+                        option{
+                            width: 15%;
+                        }
+                    }
+                    form{
+                        width: 55%;
+                        display: block;
+                        background: $white;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        margin: 5px 21px;
+                        
+                        input{
+                            padding: 10px;
+                            width: 100%;
+                            border: none;
+                            
+                        }
+                        button{
+                            background: $red2;
+                            padding: 10px 15px;
+                            border: none;
+                            i{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .form-control:focus {
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+    }
+}

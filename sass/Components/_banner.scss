@@ -1,0 +1,84 @@
+@import "../variable/variables";
+@import "../mixins/mixin";
+// banner part-----------
+#banner{
+    background: url(../images/Eflyer-banner.png) no-repeat center/cover;
+    padding:300px 0;
+    .banner_heading{
+        text-align: center;
+        h1{
+            font-size: 70px;
+            color:$f1f1f1;
+            line-height: 1;
+        }
+        .banner_button{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 80px;
+            a{
+                display: inline-block;
+                padding:20px 70px;
+                font-size: 17px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color:$white;
+                background: $dark;
+                border-radius: 10px;
+            }
+        }
+    }
+    .fashion{
+        text-align: center;
+        h3{
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 34px;
+            text-transform: capitalize;
+            color:$dark
+        }
+        .manWoman{
+            background: $white;
+            padding: 20px;
+            .price{
+                h6{
+                    
+                    font-size: 17px;
+                    font-weight: 800;
+                    text-transform: capitalize;
+                    color:$dark;
+                }
+                h5{
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color:$red;
+                    span{
+                        color:$dark;
+                    }
+                }
+            }
+            .mor{
+                display: flex;
+                justify-content: space-between;
+                .buyfont{
+                    a{
+                        color:$red;
+                        font-size: 17px;
+                        font-weight: 800;
+                        text-transform: capitalize;
+                    }
+
+                }
+                .ancorred{
+                    a{
+                        color:$dark;
+                        font-size: 17px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

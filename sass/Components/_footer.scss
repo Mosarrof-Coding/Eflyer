@@ -1,0 +1,74 @@
+footer{
+    background: #252525;
+    padding: 100px 0;
+    .f_heading{
+        text-align: center;
+        h1{
+            font-size: 50px;
+            font-weight: 400;
+            color:$white;
+            text-transform: capitalize;
+        }
+    }
+    .form{
+        width: 60%;
+        display: block;
+        margin: auto;
+        form{
+            width: 100%;
+            .inpgroup{
+                border-bottom: 1px solid #fff;
+                display: flex;
+                justify-content: space-between;
+                background: none;
+                input{
+                    background: none !important;
+                    width: 60%;
+                    margin: 10px 0;
+                    text-transform: capitalize;
+                    border: none;
+                    color:#fff;
+                    &::placeholder{
+                        color:#fff !important;
+                        background: none !important;
+                    }
+                }
+                .btn{
+                    width: 40%;
+                    color:$red;
+                    border:none;
+                    text-transform: capitalize;
+                    outline: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .headerUl{
+        padding: 10px 0;
+        li{
+            margin: 5px 20px;
+            a{
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 32px;
+                text-transform: capitalize;
+                color:$white;
+                &:hover{
+                    color:$red;
+                }
+            }
+        }
+    }
+    .helpline{
+        display: block;
+        text-align: center;
+        color:$white;
+    }
+    .copyright{
+        display: block;
+        text-align: center;
+        color:$white;
+        margin-top: 50px;
+    }
+}

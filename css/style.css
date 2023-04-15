@@ -1,0 +1,594 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "montseerat", sans-serif;
+  letter-spacing: 0.03rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+#navbar .headerUl {
+  background: url(../images/navcov.png) no-repeat center/cover;
+  padding: 10px 0;
+}
+#navbar .headerUl li {
+  margin: 5px 20px;
+}
+#navbar .headerUl li a {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #fff;
+}
+#navbar .headerUl li a:hover {
+  color: #ff6262;
+}
+#navbar .h2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+#navbar .h2 h1 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #fff;
+}
+#navbar .navbar .sm_sm_navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 320px;
+  margin-left: -320px;
+  height: 100vh;
+  display: block;
+  background: #000;
+  transition: ease-in-out 0.5s;
+}
+#navbar .navbar .sm_sm_navbar .sm_mdNav {
+  padding: 20px 50px;
+}
+#navbar .navbar .sm_sm_navbar .sm_mdNav li a {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0;
+}
+#navbar .navbar .sm_sm_navbar .sm_mdNav li a:hover {
+  color: #c40000;
+  border-bottom: 2px solid #fff;
+}
+#navbar .navbar .sm_sm_navbar .close {
+  width: 100%;
+  background: rgb(215, 215, 215);
+  display: grid;
+  place-items: center;
+  border: 1px solid #9b9b9b;
+}
+#navbar .navbar .sm_sm_navbar .close i {
+  margin: 10% 48%;
+  font-size: 30px;
+  color: #fff;
+}
+#navbar .navbar .smnv {
+  margin-left: 0;
+}
+#navbar .navbar .container {
+  padding: 0 55px !important;
+}
+#navbar .navbar .container a {
+  width: 10%;
+}
+#navbar .navbar .container a .home {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+}
+#navbar .navbar .container .menav {
+  display: flex;
+  justify-content: right;
+  width: 90%;
+}
+#navbar .navbar .container .menav ul {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#navbar .navbar .container .menav ul li {
+  margin: 5px 21px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+#navbar .navbar .container .menav ul li i {
+  font-size: 14px;
+  margin-right: 7px;
+}
+#navbar .navbar .container .menav ul select {
+  margin: 5px 21px;
+  display: block;
+  text-transform: capitalize;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+}
+#navbar .navbar .container .menav ul select option {
+  width: 15%;
+}
+#navbar .navbar .container .menav ul form {
+  width: 55%;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 21px;
+}
+#navbar .navbar .container .menav ul form input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+#navbar .navbar .container .menav ul form button {
+  background: #c40000;
+  padding: 10px 15px;
+  border: none;
+}
+#navbar .navbar .container .menav ul form button i {
+  font-size: 20px;
+}
+#navbar .navbar .container .menav ul .form-control:focus {
+  box-shadow: none !important;
+}
+
+#banner {
+  background: url(../images/Eflyer-banner.png) no-repeat center/cover;
+  padding: 300px 0;
+}
+#banner .banner_heading {
+  text-align: center;
+}
+#banner .banner_heading h1 {
+  font-size: 70px;
+  color: #f1f1f1;
+  line-height: 1;
+}
+#banner .banner_heading .banner_button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+#banner .banner_heading .banner_button a {
+  display: inline-block;
+  padding: 20px 70px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+}
+#banner .fashion {
+  text-align: center;
+}
+#banner .fashion h3 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 34px;
+  text-transform: capitalize;
+  color: #000;
+}
+#banner .fashion .manWoman {
+  background: #fff;
+  padding: 20px;
+}
+#banner .fashion .manWoman .price h6 {
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #000;
+}
+#banner .fashion .manWoman .price h5 {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #ff6262;
+}
+#banner .fashion .manWoman .price h5 span {
+  color: #000;
+}
+#banner .fashion .manWoman .mor {
+  display: flex;
+  justify-content: space-between;
+}
+#banner .fashion .manWoman .mor .buyfont a {
+  color: #ff6262;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+#banner .fashion .manWoman .mor .ancorred a {
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#fashion {
+  margin-top: -7%;
+}
+#fashion .fasion_heading {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#fashion .fasion_heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+}
+#fashion .dressup {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px 1px #ebebeb;
+  margin-bottom: 20px;
+}
+#fashion .dressup .frogCaption {
+  display: block;
+  text-align: center;
+  padding: 30px 40px 0 40px;
+}
+#fashion .dressup .frogCaption .name {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #656560;
+  text-transform: capitalize;
+}
+#fashion .dressup .frogCaption .price {
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ff6262;
+  text-transform: capitalize;
+}
+#fashion .dressup .frogCaption .price .thin {
+  color: #262626;
+}
+#fashion .dressup .frog {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 60px 0;
+}
+#fashion .dressup .frog img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+#fashion .dressup .buynow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 30px 40px;
+}
+#fashion .dressup .buynow .buy {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #c40000;
+}
+#fashion .dressup .buynow .btn a {
+  font-weight: 300;
+  color: #262626;
+  text-transform: capitalize;
+}
+#fashion .fsnbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px !important;
+}
+#fashion .fsnbtn .slick {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: #30302e;
+}
+#fashion .fsnbtn .slick:hover {
+  background: red;
+}
+
+#electronics {
+  padding: 100px 0;
+}
+#electronics .fasion_heading {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#electronics .fasion_heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+}
+#electronics .dressup {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px 1px #ebebeb;
+  margin-bottom: 20px;
+}
+#electronics .dressup .frogCaption {
+  display: block;
+  text-align: center;
+  padding: 30px 40px 0 40px;
+}
+#electronics .dressup .frogCaption .name {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #656560;
+  text-transform: capitalize;
+}
+#electronics .dressup .frogCaption .price {
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ff6262;
+  text-transform: capitalize;
+}
+#electronics .dressup .frogCaption .price .thin {
+  color: #262626;
+}
+#electronics .dressup .frog {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 60px 0;
+}
+#electronics .dressup .frog img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+#electronics .dressup .buynow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 30px 40px;
+}
+#electronics .dressup .buynow .buy {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #c40000;
+}
+#electronics .dressup .buynow .btn a {
+  font-weight: 300;
+  color: #262626;
+  text-transform: capitalize;
+}
+#electronics .fsnbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px !important;
+}
+#electronics .fsnbtn .slick {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: #30302e;
+}
+#electronics .fsnbtn .slick:hover {
+  background: red;
+}
+
+#jewellery {
+  padding: 0;
+}
+#jewellery .fasion_heading {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#jewellery .fasion_heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+}
+#jewellery .dressup {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px 1px #ebebeb;
+  margin-bottom: 20px;
+}
+#jewellery .dressup .frogCaption {
+  display: block;
+  text-align: center;
+  padding: 30px 40px 0 40px;
+}
+#jewellery .dressup .frogCaption .name {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #656560;
+  text-transform: capitalize;
+}
+#jewellery .dressup .frogCaption .price {
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ff6262;
+  text-transform: capitalize;
+}
+#jewellery .dressup .frogCaption .price .thin {
+  color: #262626;
+}
+#jewellery .dressup .frog {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 60px 0;
+}
+#jewellery .dressup .frog img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+#jewellery .dressup .buynow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 30px 40px;
+}
+#jewellery .dressup .buynow .buy {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #c40000;
+}
+#jewellery .dressup .buynow .btn a {
+  font-weight: 300;
+  color: #262626;
+  text-transform: capitalize;
+}
+#jewellery .fsnbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px !important;
+}
+#jewellery .fsnbtn .slick {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: #30302e;
+}
+#jewellery .fsnbtn .slick:hover {
+  background: red;
+}
+
+footer {
+  background: #252525;
+  padding: 100px 0;
+}
+footer .f_heading {
+  text-align: center;
+}
+footer .f_heading h1 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+footer .form {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+footer .form form {
+  width: 100%;
+}
+footer .form form .inpgroup {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+}
+footer .form form .inpgroup input {
+  background: none !important;
+  width: 60%;
+  margin: 10px 0;
+  text-transform: capitalize;
+  border: none;
+  color: #fff;
+}
+footer .form form .inpgroup input::-moz-placeholder {
+  color: #fff !important;
+  background: none !important;
+}
+footer .form form .inpgroup input::placeholder {
+  color: #fff !important;
+  background: none !important;
+}
+footer .form form .inpgroup .btn {
+  width: 40%;
+  color: #ff6262;
+  border: none;
+  text-transform: capitalize;
+  outline: 0;
+  padding: 0;
+}
+footer .headerUl {
+  padding: 10px 0;
+}
+footer .headerUl li {
+  margin: 5px 20px;
+}
+footer .headerUl li a {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #fff;
+}
+footer .headerUl li a:hover {
+  color: #ff6262;
+}
+footer .helpline {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+footer .copyright {
+  display: block;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}/*# sourceMappingURL=style.css.map */

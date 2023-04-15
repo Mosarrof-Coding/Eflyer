@@ -1,0 +1,19 @@
+@import "../variable/variables";
+@mixin cmnSlickBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px !important;
+    .slick{
+        padding: 10px 20px;
+        font-size: 18px;
+        color:$white;
+        display: grid;
+        place-items: center;
+        border: none;
+        background: #30302e;
+        &:hover{
+            background: red;
+        }
+    }
+}
